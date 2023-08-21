@@ -1,29 +1,30 @@
-# 백준 1000번 문제
-A, B = input().split(" ")
+# 10926
+id_name = input()
+print(f"{id_name}??!")
 
-print(int(A) + int(B))
+# 18108
+buda_year = input()
+term = 543
+print(int(buda_year) - term)
 
+# 10430
+A, B, C = input().split(" ")
+A, B, C = int(A), int(B), int(C)
+print((A + B) % C)
+print(((A % C) + (B % C)) % C)
+print((A * B) % C)
+print(((A % C) * (B % C)) % C)
 
-# 백준 1001번 문제
-A, B = input().split(" ")
+# 2588
+A = input()
+B = input()
 
-print(int(A) - int(B))
+result_1 = int(B[2]) * int(A)
+result_2 = int(B[1]) * int(A)
+result_3 = int(B[0]) * int(A)
+result_4 = result_1 + 10 * result_2 + 100 * result_3
 
-# 10998
-A, B = input().split(" ")
-
-print(int(A) * int(B))
-
-
-# 1008
-A, B = input().split(" ")
-
-print(int(A) / int(B))
-
-# 10869
-A, B = input().split(" ")
-print(int(A) + int(B))
-print(int(A) - int(B))
-print(int(A) * int(B))
-print(int(int(A) / int(B)))
-print(int(A) % int(B))
+print(result_1)
+print(result_2)
+print(result_3)
+print(result_4)
