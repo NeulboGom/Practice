@@ -1,12 +1,16 @@
-# 10818
+# 2562
 
 '''
-N개의 정수가 주어진다. 이때, 최솟값과 최댓값을 구하는 프로그램을 작성하시오.
+9개의 서로 다른 자연수가 주어질 때, 이들 중 최댓값을 찾고 그 최댓값이 몇 번째 수인지를 구하는 프로그램을 작성하시오.
+예를 들어, 서로 다른 9개의 자연수
+3, 29, 38, 12, 57, 74, 40, 85, 61
+이 주어지면, 이들 중 최댓값은 85이고, 이 값은 8번째 수이다.
 '''
 
-n = int(input())
-num_list = input().split(" ")
-for i in range(n):
-    num_list[i] = int(num_list[i])
+num_list = [0 for _ in range(9)]
+for i in range(9):
+    num_list[i] = int(input())
+max_num = max(num_list)
 
-print(min(num_list), max(num_list))
+print(max_num)
+print(num_list.index(max_num) + 1)
